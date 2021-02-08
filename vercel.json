@@ -1,6 +1,48 @@
 {
   "routes": [
     {
+      "src": "/f",
+      "status": 302,
+      "headers": {
+        "Location": "https://www.facebook.com/siketyan"
+      }
+    },
+    {
+      "src": "/g",
+      "status": 302,
+      "headers": {
+        "Location": "https://github.com/siketyan"
+      }
+    },
+    {
+      "src": "/i",
+      "status": 302,
+      "headers": {
+        "Location": "https://www.instagram.com/siketyan.dev/"
+      }
+    },
+    {
+      "src": "/k",
+      "status": 302,
+      "headers": {
+        "Location": "https://keybase.io/siketyan"
+      }
+    },
+    {
+      "src": "/t",
+      "status": 302,
+      "headers": {
+        "Location": "https://twitter.com/siketyan_dev"
+      }
+    },
+    {
+      "src": "/y",
+      "status": 302,
+      "headers": {
+        "Location": "https://www.youtube.com/channel/UCkYZu3Uka3XM6FotAlkOpvg"
+      }
+    },
+    {
       "src": "/",
       "status": 302,
       "headers": {
