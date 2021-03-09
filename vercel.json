@@ -36,6 +36,13 @@
       }
     },
     {
+      "src": "/m",
+      "status": 302,
+      "headers": {
+        "Location": "https://s6n.awsapps.com/mail"
+      }
+    },
+    {
       "src": "/y",
       "status": 302,
       "headers": {
