@@ -18,7 +18,7 @@
       "src": "/i",
       "status": 302,
       "headers": {
-        "Location": "https://www.instagram.com/siketyan.dev/"
+        "Location": "https://www.instagram.com/s6n.jp/"
       }
     },
     {
@@ -32,7 +32,7 @@
       "src": "/t",
       "status": 302,
       "headers": {
-        "Location": "https://twitter.com/siketyan_dev"
+        "Location": "https://twitter.com/s6n_jp"
       }
     },
     {
