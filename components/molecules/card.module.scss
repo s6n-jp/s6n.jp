@@ -1,0 +1,25 @@
+@import 'styles/variables';
+
+.wrapper {
+    align-items: center;
+    display: flex;
+}
+
+.caption {
+    margin-left: 22px;
+
+    > * {
+        display: block;
+    }
+}
+
+.name {
+    color: $color-text-primary;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.summary {
+    color: $color-text-secondary;
+    font-weight: bolder;
+}

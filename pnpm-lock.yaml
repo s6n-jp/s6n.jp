@@ -6,6 +6,7 @@ specifiers:
   eslint: ^7.32.0
   eslint-config-next: ^11.1.2
   eslint-config-prettier: ^8.3.0
+  modern-css-reset: ^1.4.0
   next: ^11.1.2
   react: ^17.0.2
   react-dom: ^17.0.2
@@ -13,6 +14,7 @@ specifiers:
   typescript: ^4.4.3
 
 dependencies:
+  modern-css-reset: 1.4.0
   next: 11.1.2_dda2c6382961d2b57087a288cd378b42
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
@@ -1964,6 +1966,10 @@ packages:
 
   /minimist/1.2.5:
     resolution: {integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==}
+
+  /modern-css-reset/1.4.0:
+    resolution: {integrity: sha512-0crZmSFmrxkI7159rvQWjpDhy0u4+Awg/iOycJdlVn0RSeft/a+6BrQHR3IqvmdK25sqt0o6Z5Ap7cWgUee2rw==}
+    dev: false
 
   /ms/2.0.0:
     resolution: {integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=}
