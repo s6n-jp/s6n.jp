@@ -24,7 +24,7 @@ type Props = {
 const Layout = ({ children }: Props) => {
   return (
     <div className={styles.wrapper}>
-      <Sidebar />
+      <Sidebar className={styles.side} />
       <main className={styles.main}>
         <Menus items={Items} />
         {children}

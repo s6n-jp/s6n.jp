@@ -5,10 +5,14 @@ import Taglines from '../molecules/taglines';
 
 import styles from './sidebar.module.scss';
 
-const Sidebar: React.FC = () => {
+type Props = {
+  className?: string;
+}
+
+const Sidebar: React.FC<Props> = (props) => {
   return (
     <>
-      <header className={styles.sidebar}>
+      <header className={`${styles.sidebar} ${props.className}`}>
         <Logo />
         <Taglines
           className={styles.taglines}
