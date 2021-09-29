@@ -1,10 +1,15 @@
 .wrapper {
     display: flex;
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-wrap: wrap;
     margin: 0 auto;
     max-width: 1064px;
     padding: 0 44px;
 }
 
 .main {
+    flex-basis: min-content;
+    flex-grow: 1;
     padding: 100px 62px;
 }
