@@ -48,13 +48,6 @@
       "headers": {
         "Location": "https://www.youtube.com/channel/UCkYZu3Uka3XM6FotAlkOpvg"
       }
-    },
-    {
-      "src": "/",
-      "status": 302,
-      "headers": {
-        "Location": "https://siketyan.dev/"
-      }
     }
   ]
 }
