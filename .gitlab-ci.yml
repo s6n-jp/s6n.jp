@@ -6,6 +6,7 @@ cache:
 
 pages:
   script:
+    - npm install -g pnpm
     - pnpm install
     - ./node_modules/.bin/next export
   artifacts:
