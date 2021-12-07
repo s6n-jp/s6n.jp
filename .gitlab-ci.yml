@@ -1,0 +1,15 @@
+image: node:latest
+
+cache:
+  paths:
+    - node_modules/
+
+pages:
+  script:
+    - pnpm install
+    - ./node_modules/.bin/next export
+  artifacts:
+    paths:
+      - out
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
