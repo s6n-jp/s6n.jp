@@ -8,10 +8,10 @@ pages:
   script:
     - npm install -g pnpm
     - pnpm install
-    - ./node_modules/.bin/next build
-    - ./node_modules/.bin/next export
+    - pnpm run build
+    - rm -rf public && mv out public
   artifacts:
     paths:
-      - out
+      - public
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
