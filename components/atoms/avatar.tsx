@@ -1,11 +1,11 @@
 import React from 'react';
-import Image from 'next/image';
 
 import styles from './avatar.module.scss';
 
 const Avatar: React.FC = () => {
+  // noinspection CheckImageSize
   return (
-    <Image
+    <img
       className={styles.image}
       src="/images/avatar.jpg"
       alt="Naoki Ikeguchi"
