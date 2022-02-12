@@ -4,6 +4,7 @@ import styles from './menu.module.scss';
 
 type Props = {
   text: string;
+  href?: string;
   colored?: boolean;
   className?: string;
 };
@@ -12,7 +13,7 @@ const Menu: React.FC<Props> = (props) => {
   return (
     <a
       className={`${styles.link} ${props.colored ? styles.isColored : ''} ${props.className}`}
-      href="#"
+      href={props.href}
     >{props.text}</a>
   );
 };

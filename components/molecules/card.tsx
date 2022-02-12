@@ -3,14 +3,19 @@ import Avatar from '../atoms/avatar';
 
 import styles from './card.module.scss';
 
-const Card: React.FC = () => {
+type Props = {
+  name: string,
+  avatarUrl: string,
+};
+
+const Card: React.VFC<Props> = props => {
   return (
     <figure
       className={styles.wrapper}
     >
-      <Avatar />
+      <Avatar url={props.avatarUrl} alt={props.name} />
       <figcaption className={styles.caption}>
-        <span className={styles.name}>Naoki Ikeguchi</span>
+        <span className={styles.name}>{props.name}</span>
         <span className={styles.summary}>they/them, 18 y.o.</span>
       </figcaption>
     </figure>

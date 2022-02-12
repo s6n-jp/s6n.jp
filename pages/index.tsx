@@ -1,19 +1,45 @@
 import React from 'react';
 
+import { User } from '@siketyan/wantedly-profile/esm/model';
+import { Client } from '@siketyan/wantedly-profile';
+
 import Card from '../components/molecules/card';
+import History from '../components/molecules/history';
 
 import styles from './index.module.scss';
 
-const Index: React.FC = () => {
+const WANTEDLY_USER_ID = '79008489';
+
+type Props = {
+  user: User<typeof WANTEDLY_USER_ID>,
+};
+
+// noinspection JSUnusedGlobalSymbols
+export const getStaticProps = async () => {
+  const client = Client.default();
+
+  return {
+    props: {
+      user: await client.fetchUserById(WANTEDLY_USER_ID),
+    } as Props,
+  };
+};
+
+const Index: React.VFC<Props> = ({ user }) => {
   return (
     <>
-      <Card />
-      <p className={styles.description}>
-        A Web backend engineer with PHP, C#, Go and TypeScript, a former Kosen student at Toyota College.
-        Also working at YUMEMI Inc. as a full-time employee.
-      </p>
+      <section className={styles.section} id="profile">
+        <Card name={user.profile.name} avatarUrl={user.profile.avatarUrl} />
+        <p className={styles.description}>
+          {user.profile.introduction}
+        </p>
+      </section>
+      <section className={styles.section} id="history">
+        <History chapters={user.profile.profilePageLifeStory.chapters} />
+      </section>
     </>
   )
 };
 
+// noinspection JSUnusedGlobalSymbols
 export default Index

@@ -8,9 +8,11 @@ import styles from './main.module.scss';
 const Items: MenuItem[] = [
   {
     text: "Profile",
+    href: "#profile",
   },
   {
     text: "History",
+    href: "#history",
   },
   {
     text: "Contact",
@@ -25,10 +27,12 @@ const Layout = ({ children }: Props) => {
   return (
     <div className={styles.wrapper}>
       <Sidebar className={styles.side} />
-      <main className={styles.main}>
+      <div className={styles.contents}>
         <Menus items={Items} />
-        {children}
-      </main>
+        <main className={styles.main}>
+          {children}
+        </main>
+      </div>
     </div>
   )
 };
