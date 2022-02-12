@@ -1,7 +1,5 @@
 import React from 'react';
-
-import { User } from '@siketyan/wantedly-profile/esm/model';
-import { Client } from '@siketyan/wantedly-profile';
+import { Client, User } from 'wantedly-profile';
 
 import Card from '../components/molecules/card';
 import History from '../components/molecules/history';

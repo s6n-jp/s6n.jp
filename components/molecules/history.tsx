@@ -1,15 +1,12 @@
 import React from 'react';
+import { Education, ExperienceType, LifeStoryChapter, LifeStoryChapterSection, WorkExperience } from 'wantedly-profile';
 
-import {
-  Education, LifeStoryChapter, LifeStoryChapterSection,
-  WorkExperience,
-} from '@siketyan/wantedly-profile/esm/model';
+import Divider from '../atoms/divider';
 import Experience from '../atoms/experience';
 
 import styles from './history.module.scss';
-import Divider from '../atoms/divider';
 
-const Section: React.VFC<{ section: LifeStoryChapterSection }> = ({ section }) => {
+const Section: React.VFC<{ section: LifeStoryChapterSection<ExperienceType> }> = ({ section }) => {
   if (section.experienceType === 'EDUCATION') {
     const experience = section.experience as Education<typeof section.experienceUuid>;
 

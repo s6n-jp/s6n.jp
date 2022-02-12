@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { Duration, EmploymentType, YearMonth } from '@siketyan/wantedly-profile/esm/model';
+import { Duration, EmploymentType, YearMonth } from 'wantedly-profile';
 
 import styles from './experience.module.scss';
 
