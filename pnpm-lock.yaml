@@ -1,7 +1,6 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@siketyan/wantedly-profile': ^0.1.0
   '@types/node': ^16.10.1
   '@types/react': ^17.0.24
   eslint: ^7.32.0
@@ -18,14 +17,15 @@ specifiers:
   ttf2woff: ^3.0.0
   ttf2woff2: ^4.0.4
   typescript: ^4.4.3
+  wantedly-profile: ^0.1.0
 
 dependencies:
-  '@siketyan/wantedly-profile': 0.1.0_graphql@16.3.0
   modern-css-reset: 1.4.0
   next: 11.1.2_dda2c6382961d2b57087a288cd378b42
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   sass: 1.42.1
+  wantedly-profile: 0.1.0_graphql@16.3.0
 
 devDependencies:
   '@types/node': 16.10.1
@@ -289,17 +289,6 @@ packages:
   /@rushstack/eslint-patch/1.0.7:
     resolution: {integrity: sha512-3Zi2LGbCLDz4IIL7ir6wD0u/ggHotLkK5SlVzFzTcYaNgPR4MAt/9JYZqXWKcofPWEoptfpnCJU8Bq9sxw8QUg==}
     dev: true
-
-  /@siketyan/wantedly-profile/0.1.0_graphql@16.3.0:
-    resolution: {integrity: sha512-m/Jvl8VKELrJ4BMW6zFibARvIePVIw4AQ2Tt2x04jmJRvY3A0OPqmkMBbhloVPpa0u4VzUMz4Pmf2tl9q6kQjw==, tarball: download/@siketyan/wantedly-profile/0.1.0/b73530884acddb54c4b2aebade39d2acafbbbb615efb5980186d02b9c06ad2e5}
-    peerDependencies:
-      graphql: '[14, 17)'
-    dependencies:
-      graphql: 16.3.0
-      graphql-request: 4.0.0_graphql@16.3.0
-    transitivePeerDependencies:
-      - encoding
-    dev: false
 
   /@tootallnate/once/1.1.2:
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}
@@ -3805,6 +3794,17 @@ packages:
 
   /vm-browserify/1.1.2:
     resolution: {integrity: sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==}
+    dev: false
+
+  /wantedly-profile/0.1.0_graphql@16.3.0:
+    resolution: {integrity: sha512-cTyl15Hdc8tjpOh4cONFc7NgLgbzkLqGGN/xwc4VC/rxbwd9V0vibv5yua7HH3AzsJLdKGJVrRXdIZVqjZ8IFA==}
+    peerDependencies:
+      graphql: '[14, 17)'
+    dependencies:
+      graphql: 16.3.0
+      graphql-request: 4.0.0_graphql@16.3.0
+    transitivePeerDependencies:
+      - encoding
     dev: false
 
   /watchpack/2.1.1:
