@@ -4,12 +4,20 @@
     flex-grow: 1;
     margin: 0 auto;
     max-width: 1200px;
+    max-height: 100vh;
     padding: 0 44px;
 }
 
-.main {
+.contents {
     flex-grow: 1;
-    padding: 100px 62px;
+    padding: 100px 62px 0;
+    overflow-y: clip;
+}
+
+.main {
+    height: 100%;
+    padding-bottom: 100px;
+    overflow-y: scroll;
 }
 
 @media (max-width: 1024px) {
@@ -21,7 +29,7 @@
         padding: 72px 0 32px;
     }
 
-    .main {
+    .contents {
         padding: 50px 0;
     }
 }

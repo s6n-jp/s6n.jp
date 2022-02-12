@@ -6,6 +6,7 @@ import styles from './menus.module.scss';
 
 export type MenuItem = {
   text: string;
+  href?: string;
 };
 
 type Props = {
@@ -23,6 +24,7 @@ const Menus: React.FC<Props> = (props) => {
             className={styles.item}
             key={i}
             text={item.text}
+            href={item.href}
             colored={i == 0}
           />
         );

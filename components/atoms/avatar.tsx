@@ -2,13 +2,18 @@ import React from 'react';
 
 import styles from './avatar.module.scss';
 
-const Avatar: React.FC = () => {
+type Props = {
+  url: string,
+  alt: string,
+};
+
+const Avatar: React.VFC<Props> = props => {
   // noinspection CheckImageSize
   return (
     <img
       className={styles.image}
-      src="/images/avatar.jpg"
-      alt="Naoki Ikeguchi"
+      src={props.url}
+      alt={props.alt}
       width="128"
       height="128"
     />
