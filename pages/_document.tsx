@@ -4,7 +4,7 @@ import { AppInitialProps } from 'next/app';
 
 type DocumentProps = Document & AppInitialProps;
 
-const AppDocument: React.FC<DocumentProps> = ({ ..._initialProps }) => {
+const AppDocument: React.FC<DocumentProps> = () => {
   // noinspection HtmlRequiredTitleElement
   return (
     <Html lang="en">

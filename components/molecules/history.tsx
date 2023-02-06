@@ -42,7 +42,7 @@ type Props = {
 };
 
 const History: React.VFC<Props> = props => {
-  const sections = props.chapters.flatMap(chapter => chapter.sections);
+  const sections = props.chapters.flatMap(chapter => chapter.sections).filter(s => s !== undefined);
   const present = sections.filter(section => !section.experience.duration.end);
   const past = sections.filter(section => !present.includes(section));
 
