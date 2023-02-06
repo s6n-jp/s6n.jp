@@ -1,16 +1,16 @@
 {
-  "name": "@siketyan/s6n-jp",
+  "name": "@s6n-jp/s6n-jp",
   "version": "0.1.0",
   "description": "A landing page for s6n.jp.",
   "author": "Naoki Ikeguchi <me@s6n.jp>",
   "license": "MIT",
-  "homepage": "https://github.com/siketyan/s6n.jp#readme",
+  "homepage": "https://github.com/s6n-jp/s6n.jp#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/siketyan/s6n.jp.git"
+    "url": "git+https://github.com/s6n-jp/s6n.jp.git"
   },
   "bugs": {
-    "url": "https://github.com/siketyan/s6n.jp/issues"
+    "url": "https://github.com/s6n-jp/s6n.jp/issues"
   },
   "main": "index.js",
   "scripts": {
