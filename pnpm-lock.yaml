@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/node': ^16.18.12
+  '@types/node': ^18.11.19
   '@types/react': ^17.0.53
   eslint: ^7.32.0
   eslint-config-next: ^11.1.4
@@ -28,7 +28,7 @@ dependencies:
   wantedly-profile: 0.1.1_graphql@16.6.0
 
 devDependencies:
-  '@types/node': 16.18.12
+  '@types/node': 18.11.19
   '@types/react': 17.0.53
   eslint: 7.32.0
   eslint-config-next: 11.1.4_pwi7eguus2ewsl74ojg4xlctba
@@ -274,8 +274,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node/16.18.12:
-    resolution: {integrity: sha512-vzLe5NaNMjIE3mcddFVGlAXN1LEWueUsMsOJWaT6wWMJGyljHAWHznqfnKUQWGzu7TLPrGvWdNAsvQYW+C0xtw==}
+  /@types/node/18.11.19:
+    resolution: {integrity: sha512-YUgMWAQBWLObABqrvx8qKO1enAvBUdjZOAWQ5grBAkp5LQv45jBvYKZ3oFS9iKRCQyFjqw6iuEa1vmFqtxYLZw==}
     dev: true
 
   /@types/prop-types/15.7.5:
