@@ -41,11 +41,11 @@ devDependencies:
     specifier: ^8.55.0
     version: 8.55.0
   eslint-config-next:
-    specifier: ^13.5.6
-    version: 13.5.6(eslint@8.55.0)(typescript@5.3.2)
+    specifier: ^14.0.3
+    version: 14.0.3(eslint@8.55.0)(typescript@5.3.2)
   eslint-config-prettier:
-    specifier: ^8.10.0
-    version: 8.10.0(eslint@8.55.0)
+    specifier: ^9.1.0
+    version: 9.1.0(eslint@8.55.0)
   graphql:
     specifier: ^16.8.1
     version: 16.8.1
@@ -152,6 +152,9 @@ packages:
   /@aws-cdk/cloud-assembly-schema@2.110.1:
     resolution: {integrity: sha512-ivyE26pQgiUd5sOXE0DE+s0TfkZDfj1Y/dhseU+k2klsS24Cfeun9fSY568wG40PRheaO5X6jjT/4tuT78P1hQ==}
     engines: {node: '>= 14.15.0'}
+    dependencies:
+      jsonschema: 1.4.1
+      semver: 7.5.4
     dev: true
     bundledDependencies:
       - jsonschema
@@ -177,6 +180,7 @@ packages:
       '@aws-cdk/cloud-assembly-schema': 2.110.1
     dependencies:
       '@aws-cdk/cloud-assembly-schema': 2.110.1
+      semver: 7.5.4
     dev: true
     bundledDependencies:
       - semver
@@ -2001,8 +2005,8 @@ packages:
     resolution: {integrity: sha512-7xRqh9nMvP5xrW4/+L0jgRRX+HoNRGnfJpD+5Wq6/13j3dsdzxO3BCXn7D3hMqsDb+vjZnJq+vI7+EtgrYZTeA==}
     dev: false
 
-  /@next/eslint-plugin-next@13.5.6:
-    resolution: {integrity: sha512-ng7pU/DDsxPgT6ZPvuprxrkeew3XaRf4LAT4FabaEO/hAbvVx4P7wqnqdbTdDn1kgTvsI4tpIgT4Awn/m0bGbg==}
+  /@next/eslint-plugin-next@14.0.3:
+    resolution: {integrity: sha512-j4K0n+DcmQYCVnSAM+UByTVfIHnYQy2ODozfQP+4RdwtRDfobrIvKq1K4Exb2koJ79HSSa7s6B2SA8T/1YR3RA==}
     dependencies:
       glob: 7.1.7
     dev: true
@@ -4245,8 +4249,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-next@13.5.6(eslint@8.55.0)(typescript@5.3.2):
-    resolution: {integrity: sha512-o8pQsUHTo9aHqJ2YiZDym5gQAMRf7O2HndHo/JZeY7TDD+W4hk6Ma8Vw54RHiBeb7OWWO5dPirQB+Is/aVQ7Kg==}
+  /eslint-config-next@14.0.3(eslint@8.55.0)(typescript@5.3.2):
+    resolution: {integrity: sha512-IKPhpLdpSUyKofmsXUfrvBC49JMUTdeaD8ZIH4v9Vk0sC1X6URTuTJCLtA0Vwuj7V/CQh0oISuSTvNn5//Buew==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
       typescript: '>=3.3.1'
@@ -4254,7 +4258,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@next/eslint-plugin-next': 13.5.6
+      '@next/eslint-plugin-next': 14.0.3
       '@rushstack/eslint-patch': 1.6.0
       '@typescript-eslint/parser': 6.13.1(eslint@8.55.0)(typescript@5.3.2)
       eslint: 8.55.0
@@ -4270,8 +4274,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-config-prettier@8.10.0(eslint@8.55.0):
-    resolution: {integrity: sha512-SM8AMJdeQqRYT9O9zguiruQZaN7+z+E4eAP9oiLNGKMtomwaB1E9dcgUD6ZAn/eQAb52USbvezbiljfZUhbJcg==}
+  /eslint-config-prettier@9.1.0(eslint@8.55.0):
+    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -5592,6 +5596,10 @@ packages:
       universalify: 2.0.1
     optionalDependencies:
       graceful-fs: 4.2.11
+    dev: true
+
+  /jsonschema@1.4.1:
+    resolution: {integrity: sha512-S6cATIPVv1z0IlxdN+zUk5EPjkGCdnhN4wVSBlvoUO1tOLJootbo9CquNJmbIh4yikWHiUedhRYrNPn1arpEmQ==}
     dev: true
 
   /jsx-ast-utils@3.3.5:
