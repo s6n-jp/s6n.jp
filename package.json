@@ -13,12 +13,13 @@
     "url": "https://github.com/s6n-jp/s6n.jp/issues"
   },
   "main": "index.js",
-  "packageManager": "pnpm@8.3.1",
+  "packageManager": "pnpm@8.11.0",
   "scripts": {
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint",
-    "build": "run-s build:font && next build && next export",
+    "build": "run-s build:font build:next",
+    "build:next": "next build",
     "build:font": "run-p build:font:eot build:font:woff build:font:woff2",
     "build:font:eot": "ttf2eot ./public/fonts/Gilroy-ExtraBold.ttf ./public/fonts/Gilroy-ExtraBold.eot",
     "build:font:woff": "ttf2woff ./public/fonts/Gilroy-ExtraBold.ttf ./public/fonts/Gilroy-ExtraBold.woff",
@@ -26,26 +27,29 @@
   },
   "dependencies": {
     "modern-css-reset": "^1.4.0",
-    "next": "^13.1.6",
+    "next": "^14.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.58.0",
+    "sass": "^1.69.5",
     "wantedly-profile": "^0.1.1"
   },
   "devDependencies": {
-    "@types/node": "^18.11.19",
-    "@types/react": "^18.0.27",
-    "aws-cdk-lib": "2.84.0",
-    "constructs": "10.1.156",
-    "eslint": "^8.33.0",
-    "eslint-config-next": "^13.1.6",
-    "eslint-config-prettier": "^8.6.0",
-    "graphql": "^16.6.0",
+    "@types/node": "^20.10.2",
+    "@types/react": "^18.2.41",
+    "aws-cdk-lib": "^2.113.0",
+    "constructs": "^10.3.0",
+    "eslint": "^8.55.0",
+    "eslint-config-next": "^13.5.6",
+    "eslint-config-prettier": "^8.10.0",
+    "graphql": "^16.8.1",
     "npm-run-all": "^4.1.5",
-    "sst": "^2.21.7",
+    "sst": "^2.36.8",
     "ttf2eot": "^3.1.0",
     "ttf2woff": "^3.0.0",
     "ttf2woff2": "^5.0.0",
-    "typescript": "^4.9.5"
+    "typescript": "^5.3.2"
+  },
+  "engines": {
+    "node": "^20"
   }
 }
