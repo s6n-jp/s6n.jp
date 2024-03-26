@@ -16,7 +16,7 @@ const Card: React.VFC<Props> = props => {
       <Avatar url={props.avatarUrl} alt={props.name} />
       <figcaption className={styles.caption}>
         <span className={styles.name}>{props.name}</span>
-        <span className={styles.summary}>they/them, 20 y.o.</span>
+        <span className={styles.summary}>they/them, 21 y.o.</span>
       </figcaption>
     </figure>
   );
