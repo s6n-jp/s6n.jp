@@ -30,12 +30,12 @@
     "next": "^14.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.72.0",
+    "sass": "^1.74.1",
     "wantedly-profile": "^0.1.1"
   },
   "devDependencies": {
-    "@types/node": "^20.12.2",
-    "@types/react": "^18.2.73",
+    "@types/node": "^20.12.5",
+    "@types/react": "^18.2.74",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.1.4",
     "eslint-config-prettier": "^9.1.0",
@@ -44,7 +44,7 @@
     "ttf2eot": "^3.1.0",
     "ttf2woff": "^3.0.0",
     "ttf2woff2": "^5.0.0",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.4"
   },
   "engines": {
     "node": "^20"
