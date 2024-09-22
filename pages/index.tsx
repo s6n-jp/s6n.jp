@@ -1,3 +1,4 @@
+import type { GetStaticProps } from "next";
 import type { FC } from 'react';
 import { Client, type User } from 'wantedly-profile';
 
@@ -13,13 +14,13 @@ type Props = {
 };
 
 // noinspection JSUnusedGlobalSymbols
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps<Props> = async () => {
   const client = Client.default();
 
   return {
     props: {
       user: await client.fetchUserById(WANTEDLY_USER_ID),
-    } as Props,
+    },
   };
 };
 
