@@ -1,4 +1,4 @@
-import type React from 'react';
+import type { FC } from 'react';
 
 import styles from './avatar.module.scss';
 
@@ -7,7 +7,7 @@ type Props = {
   alt: string;
 };
 
-const Avatar: React.VFC<Props> = (props) => {
+const Avatar: FC<Props> = (props) => {
   // noinspection CheckImageSize
   return <img className={styles.image} src={props.url} alt={props.alt} width="128" height="128" />;
 };

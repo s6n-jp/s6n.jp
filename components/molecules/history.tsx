@@ -1,4 +1,4 @@
-import type React from 'react';
+import type { FC } from 'react';
 import type {
   Education,
   ExperienceType,
@@ -12,7 +12,7 @@ import Experience from '../atoms/experience';
 
 import styles from './history.module.scss';
 
-const Section: React.VFC<{ section: LifeStoryChapterSection<ExperienceType> }> = ({ section }) => {
+const Section: FC<{ section: LifeStoryChapterSection<ExperienceType> }> = ({ section }) => {
   if (section.experienceType === 'EDUCATION') {
     const experience = section.experience as Education<typeof section.experienceUuid>;
 
@@ -49,7 +49,7 @@ type Props = {
   chapters: LifeStoryChapter[];
 };
 
-const History: React.VFC<Props> = (props) => {
+const History: FC<Props> = (props) => {
   const sections = props.chapters.flatMap((chapter) => chapter.sections).filter((s) => s !== undefined);
   const present = sections.filter((section) => !section.experience.duration.end);
   const past = sections.filter((section) => !present.includes(section));

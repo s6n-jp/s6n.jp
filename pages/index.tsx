@@ -1,4 +1,4 @@
-import type React from 'react';
+import type { FC } from 'react';
 import { Client, type User } from 'wantedly-profile';
 
 import Card from '../components/molecules/card';
@@ -23,7 +23,7 @@ export const getStaticProps = async () => {
   };
 };
 
-const Index: React.VFC<Props> = ({ user }) => {
+const Index: FC<Props> = ({ user }) => {
   return (
     <>
       <section className={styles.section} id="profile">

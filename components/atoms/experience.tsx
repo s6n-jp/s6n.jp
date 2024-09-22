@@ -1,4 +1,4 @@
-import type React from 'react';
+import type { FC } from 'react';
 import type { Duration, EmploymentType, YearMonth } from 'wantedly-profile';
 
 import styles from './experience.module.scss';
@@ -36,7 +36,7 @@ const type = (ty: EmploymentType): string => {
   return ty;
 };
 
-const Experience: React.VFC<Props> = (props) => {
+const Experience: FC<Props> = (props) => {
   return (
     <article className={props.className}>
       <h3 className={styles.title}>

@@ -1,4 +1,4 @@
-import type React from 'react';
+import type { FC } from 'react';
 import Avatar from '../atoms/avatar';
 
 import styles from './card.module.scss';
@@ -8,7 +8,7 @@ type Props = {
   avatarUrl: string;
 };
 
-const Card: React.VFC<Props> = (props) => {
+const Card: FC<Props> = (props) => {
   return (
     <figure className={styles.wrapper}>
       <Avatar url={props.avatarUrl} alt={props.name} />
