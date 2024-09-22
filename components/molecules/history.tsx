@@ -18,19 +18,21 @@ const Section: React.VFC<{ section: LifeStoryChapterSection<ExperienceType> }> =
 
     return (
       <Experience
-        class={styles.experience}
+        className={styles.experience}
         name={experience.schoolName}
         position={experience.major}
         duration={experience.duration}
         description={experience.description}
       />
     );
-  } else if (section.experienceType === 'WORK_EXPERIENCE') {
+  }
+
+  if (section.experienceType === 'WORK_EXPERIENCE') {
     const experience = section.experience as WorkExperience<typeof section.experienceUuid>;
 
     return (
       <Experience
-        class={styles.experience}
+        className={styles.experience}
         name={experience.companyName}
         position={experience.position}
         duration={experience.duration}

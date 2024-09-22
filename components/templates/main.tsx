@@ -25,11 +25,11 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div class={styles.wrapper}>
-      <Sidebar class={styles.side} />
-      <div class={styles.contents}>
+    <div className={styles.wrapper}>
+      <Sidebar className={styles.side} />
+      <div className={styles.contents}>
         <Menus items={Items} />
-        <main class={styles.main}>{children}</main>
+        <main className={styles.main}>{children}</main>
       </div>
     </div>
   );

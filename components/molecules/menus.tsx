@@ -15,9 +15,9 @@ type Props = {
 
 const Menus: React.FC<Props> = (props) => {
   return (
-    <nav class={styles.navi}>
+    <nav className={styles.navi}>
       {props.items.map((item, i) => {
-        return <Menu class={styles.item} key={i} text={item.text} href={item.href} colored={i == 0} />;
+        return <Menu className={styles.item} key={item.text} text={item.text} href={item.href} colored={i === 0} />;
       })}
     </nav>
   );

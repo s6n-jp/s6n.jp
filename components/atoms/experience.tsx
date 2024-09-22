@@ -21,26 +21,34 @@ const duration = ({ start, end }: Duration): string => {
 };
 
 const type = (ty: EmploymentType): string => {
-  if (ty === 'FULL_TIME') return 'Full-time job';
-  if (ty === 'PART_TIME') return 'Side job';
-  if (ty === 'INTERNSHIP') return 'Internship';
+  if (ty === 'FULL_TIME') {
+    return 'Full-time job';
+  }
+
+  if (ty === 'PART_TIME') {
+    return 'Side job';
+  }
+
+  if (ty === 'INTERNSHIP') {
+    return 'Internship';
+  }
 
   return ty;
 };
 
 const Experience: React.VFC<Props> = (props) => {
   return (
-    <article class={props.className}>
-      <h3 class={styles.title}>
-        <span class={styles.duration}>{duration(props.duration)}</span>
-        <span class={styles.position}>{props.position}</span>
+    <article className={props.className}>
+      <h3 className={styles.title}>
+        <span className={styles.duration}>{duration(props.duration)}</span>
+        <span className={styles.position}>{props.position}</span>
         <span>
-          <span class={styles.at}>at</span>
-          <span class={styles.name}>{props.name}</span>
+          <span className={styles.at}>at</span>
+          <span className={styles.name}>{props.name}</span>
           {props.type && (
             <>
-              <span class={styles.as}>as</span>
-              <span class={styles.type}>{type(props.type)}</span>
+              <span className={styles.as}>as</span>
+              <span className={styles.type}>{type(props.type)}</span>
             </>
           )}
         </span>

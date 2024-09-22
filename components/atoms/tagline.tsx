@@ -8,7 +8,7 @@ type Props = {
 };
 
 const Tagline: React.FC<Props> = (props) => {
-  return <span class={`${styles.tagline} ${props.colored ? styles.isColored : ''}`}>{props.text}</span>;
+  return <span className={`${styles.tagline} ${props.colored ? styles.isColored : ''}`}>{props.text}</span>;
 };
 
 export default Tagline;

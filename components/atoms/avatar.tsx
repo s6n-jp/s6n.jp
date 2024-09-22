@@ -9,7 +9,7 @@ type Props = {
 
 const Avatar: React.VFC<Props> = (props) => {
   // noinspection CheckImageSize
-  return <img class={styles.image} src={props.url} alt={props.alt} width="128" height="128" />;
+  return <img className={styles.image} src={props.url} alt={props.alt} width="128" height="128" />;
 };
 
 export default Avatar;

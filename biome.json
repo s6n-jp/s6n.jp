@@ -12,7 +12,16 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "all": true
+      "all": true,
+      "correctness": {
+        "useImportExtensions": "off"
+      },
+      "suspicious": {
+        "noReactSpecificProps": "off"
+      },
+      "style": {
+        "noDefaultExport": "off"
+      }
     }
   },
   "organizeImports": {

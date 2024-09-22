@@ -7,11 +7,7 @@ type Props = {
 };
 
 const Divider: React.VFC<Props> = (props) => {
-  return (
-    <div class={styles.hr} role="separator">
-      {props.label && <span class={styles.label}>{props.label}</span>}
-    </div>
-  );
+  return <div className={styles.hr}>{props.label && <span className={styles.label}>{props.label}</span>}</div>;
 };
 
 export default Divider;

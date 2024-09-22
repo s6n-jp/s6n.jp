@@ -12,9 +12,9 @@ type Props = {
 const Sidebar: React.FC<Props> = (props) => {
   return (
     <>
-      <header class={`${styles.sidebar} ${props.className}`}>
+      <header className={`${styles.sidebar} ${props.className}`}>
         <Logo />
-        <Taglines class={styles.taglines} texts={['engineering', 'behind', 'our', 'web.']} />
+        <Taglines className={styles.taglines} texts={['engineering', 'behind', 'our', 'web.']} />
       </header>
     </>
   );

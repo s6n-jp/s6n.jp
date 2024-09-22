@@ -11,7 +11,7 @@ type Props = {
 
 const Menu: React.FC<Props> = (props) => {
   return (
-    <a class={`${styles.link} ${props.colored ? styles.isColored : ''} ${props.className}`} href={props.href}>
+    <a className={`${styles.link} ${props.colored ? styles.isColored : ''} ${props.className}`} href={props.href}>
       {props.text}
     </a>
   );

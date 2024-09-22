@@ -10,11 +10,11 @@ type Props = {
 
 const Card: React.VFC<Props> = (props) => {
   return (
-    <figure class={styles.wrapper}>
+    <figure className={styles.wrapper}>
       <Avatar url={props.avatarUrl} alt={props.name} />
-      <figcaption class={styles.caption}>
-        <span class={styles.name}>{props.name}</span>
-        <span class={styles.summary}>they/them, 21 y.o.</span>
+      <figcaption className={styles.caption}>
+        <span className={styles.name}>{props.name}</span>
+        <span className={styles.summary}>they/them, 21 y.o.</span>
       </figcaption>
     </figure>
   );

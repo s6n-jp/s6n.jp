@@ -26,11 +26,11 @@ export const getStaticProps = async () => {
 const Index: React.VFC<Props> = ({ user }) => {
   return (
     <>
-      <section class={styles.section} id="profile">
+      <section className={styles.section} id="profile">
         <Card name={user.profile.name} avatarUrl={user.profile.avatarUrl} />
-        <p class={styles.description}>{user.profile.introduction}</p>
+        <p className={styles.description}>{user.profile.introduction}</p>
       </section>
-      <section class={styles.section} id="history">
+      <section className={styles.section} id="history">
         <History chapters={user.profile.profilePageLifeStory.chapters} />
       </section>
     </>

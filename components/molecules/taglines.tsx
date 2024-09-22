@@ -9,9 +9,9 @@ type Props = {
 
 const Taglines: React.FC<Props> = (props) => {
   return (
-    <p class={props.className}>
+    <p className={props.className}>
       {props.texts.map((t, i) => {
-        return <Tagline key={i} text={t} colored={i == 0} />;
+        return <Tagline key={t} text={t} colored={i === 0} />;
       })}
     </p>
   );
