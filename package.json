@@ -13,7 +13,7 @@
     "url": "https://github.com/s6n-jp/s6n.jp/issues"
   },
   "main": "index.js",
-  "packageManager": "pnpm@8.15.5",
+  "packageManager": "pnpm@9.11.0",
   "scripts": {
     "dev": "next dev",
     "start": "next start",
