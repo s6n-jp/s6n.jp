@@ -1,22 +1,20 @@
-import React from 'react';
+import type React from 'react';
 import Avatar from '../atoms/avatar';
 
 import styles from './card.module.scss';
 
 type Props = {
-  name: string,
-  avatarUrl: string,
+  name: string;
+  avatarUrl: string;
 };
 
-const Card: React.VFC<Props> = props => {
+const Card: React.VFC<Props> = (props) => {
   return (
-    <figure
-      className={styles.wrapper}
-    >
+    <figure class={styles.wrapper}>
       <Avatar url={props.avatarUrl} alt={props.name} />
-      <figcaption className={styles.caption}>
-        <span className={styles.name}>{props.name}</span>
-        <span className={styles.summary}>they/them, 21 y.o.</span>
+      <figcaption class={styles.caption}>
+        <span class={styles.name}>{props.name}</span>
+        <span class={styles.summary}>they/them, 21 y.o.</span>
       </figcaption>
     </figure>
   );

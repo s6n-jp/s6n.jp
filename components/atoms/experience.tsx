@@ -1,15 +1,15 @@
-import React from 'react';
-import { Duration, EmploymentType, YearMonth } from 'wantedly-profile';
+import type React from 'react';
+import type { Duration, EmploymentType, YearMonth } from 'wantedly-profile';
 
 import styles from './experience.module.scss';
 
 type Props = {
-  name: string,
-  position: string,
-  duration: Duration,
-  description?: string,
-  type?: EmploymentType,
-  className?: string,
+  name: string;
+  position: string;
+  duration: Duration;
+  description?: string;
+  type?: EmploymentType;
+  className?: string;
 };
 
 const yearMonth = ({ year, month }: YearMonth): string => {
@@ -28,19 +28,21 @@ const type = (ty: EmploymentType): string => {
   return ty;
 };
 
-const Experience: React.VFC<Props> = props => {
+const Experience: React.VFC<Props> = (props) => {
   return (
-    <article className={props.className}>
-      <h3 className={styles.title}>
-        <span className={styles.duration}>{duration(props.duration)}</span>
-        <span className={styles.position}>{props.position}</span>
+    <article class={props.className}>
+      <h3 class={styles.title}>
+        <span class={styles.duration}>{duration(props.duration)}</span>
+        <span class={styles.position}>{props.position}</span>
         <span>
-          <span className={styles.at}>at</span>
-          <span className={styles.name}>{props.name}</span>
-          {props.type && <>
-            <span className={styles.as}>as</span>
-            <span className={styles.type}>{type(props.type)}</span>
-          </>}
+          <span class={styles.at}>at</span>
+          <span class={styles.name}>{props.name}</span>
+          {props.type && (
+            <>
+              <span class={styles.as}>as</span>
+              <span class={styles.type}>{type(props.type)}</span>
+            </>
+          )}
         </span>
       </h3>
       <p>{props.description}</p>

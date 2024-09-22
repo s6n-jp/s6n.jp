@@ -1,4 +1,4 @@
-import React from 'react';
+import type React from 'react';
 
 import styles from './menu.module.scss';
 
@@ -11,10 +11,9 @@ type Props = {
 
 const Menu: React.FC<Props> = (props) => {
   return (
-    <a
-      className={`${styles.link} ${props.colored ? styles.isColored : ''} ${props.className}`}
-      href={props.href}
-    >{props.text}</a>
+    <a class={`${styles.link} ${props.colored ? styles.isColored : ''} ${props.className}`} href={props.href}>
+      {props.text}
+    </a>
   );
 };
 

@@ -1,5 +1,11 @@
-import React from 'react';
-import { Education, ExperienceType, LifeStoryChapter, LifeStoryChapterSection, WorkExperience } from 'wantedly-profile';
+import type React from 'react';
+import type {
+  Education,
+  ExperienceType,
+  LifeStoryChapter,
+  LifeStoryChapterSection,
+  WorkExperience,
+} from 'wantedly-profile';
 
 import Divider from '../atoms/divider';
 import Experience from '../atoms/experience';
@@ -12,7 +18,7 @@ const Section: React.VFC<{ section: LifeStoryChapterSection<ExperienceType> }> =
 
     return (
       <Experience
-        className={styles.experience}
+        class={styles.experience}
         name={experience.schoolName}
         position={experience.major}
         duration={experience.duration}
@@ -24,7 +30,7 @@ const Section: React.VFC<{ section: LifeStoryChapterSection<ExperienceType> }> =
 
     return (
       <Experience
-        className={styles.experience}
+        class={styles.experience}
         name={experience.companyName}
         position={experience.position}
         duration={experience.duration}
@@ -38,19 +44,23 @@ const Section: React.VFC<{ section: LifeStoryChapterSection<ExperienceType> }> =
 };
 
 type Props = {
-  chapters: LifeStoryChapter[],
+  chapters: LifeStoryChapter[];
 };
 
-const History: React.VFC<Props> = props => {
-  const sections = props.chapters.flatMap(chapter => chapter.sections).filter(s => s !== undefined);
-  const present = sections.filter(section => !section.experience.duration.end);
-  const past = sections.filter(section => !present.includes(section));
+const History: React.VFC<Props> = (props) => {
+  const sections = props.chapters.flatMap((chapter) => chapter.sections).filter((s) => s !== undefined);
+  const present = sections.filter((section) => !section.experience.duration.end);
+  const past = sections.filter((section) => !present.includes(section));
 
   return (
     <>
-      {present.map(section => <Section key={section.experienceUuid} section={section} />)}
+      {present.map((section) => (
+        <Section key={section.experienceUuid} section={section} />
+      ))}
       <Divider label="Past Experiences" />
-      {past.map(section => <Section key={section.experienceUuid} section={section} />)}
+      {past.map((section) => (
+        <Section key={section.experienceUuid} section={section} />
+      ))}
     </>
   );
 };

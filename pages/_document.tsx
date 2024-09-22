@@ -1,6 +1,7 @@
-import React from 'react';
-import Document, { Html, Head, Main, NextScript } from 'next/document'; // eslint-disable-line @next/next/no-document-import-in-page
-import { AppInitialProps } from 'next/app';
+import type { AppInitialProps } from 'next/app';
+import type Document from 'next/document'; // eslint-disable-line @next/next/no-document-import-in-page
+import { Head, Html, Main, NextScript } from 'next/document';
+import type React from 'react';
 
 type DocumentProps = Document & AppInitialProps;
 
@@ -17,4 +18,4 @@ const AppDocument: React.FC<DocumentProps> = () => {
   );
 };
 
-export default AppDocument
+export default AppDocument;

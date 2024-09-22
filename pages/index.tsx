@@ -1,5 +1,5 @@
-import React from 'react';
-import { Client, User } from 'wantedly-profile';
+import type React from 'react';
+import { Client, type User } from 'wantedly-profile';
 
 import Card from '../components/molecules/card';
 import History from '../components/molecules/history';
@@ -9,7 +9,7 @@ import styles from './index.module.scss';
 const WANTEDLY_USER_ID = '79008489';
 
 type Props = {
-  user: User<typeof WANTEDLY_USER_ID>,
+  user: User<typeof WANTEDLY_USER_ID>;
 };
 
 // noinspection JSUnusedGlobalSymbols
@@ -26,18 +26,16 @@ export const getStaticProps = async () => {
 const Index: React.VFC<Props> = ({ user }) => {
   return (
     <>
-      <section className={styles.section} id="profile">
+      <section class={styles.section} id="profile">
         <Card name={user.profile.name} avatarUrl={user.profile.avatarUrl} />
-        <p className={styles.description}>
-          {user.profile.introduction}
-        </p>
+        <p class={styles.description}>{user.profile.introduction}</p>
       </section>
-      <section className={styles.section} id="history">
+      <section class={styles.section} id="history">
         <History chapters={user.profile.profilePageLifeStory.chapters} />
       </section>
     </>
-  )
+  );
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default Index
+export default Index;

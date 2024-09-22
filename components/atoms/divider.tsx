@@ -1,17 +1,17 @@
-import React from 'react';
+import type React from 'react';
 
 import styles from './divider.module.scss';
 
 type Props = {
-  label?: string,
-}
+  label?: string;
+};
 
-const Divider: React.VFC<Props> = props => {
+const Divider: React.VFC<Props> = (props) => {
   return (
-    <div className={styles.hr} role="separator">
-      {props.label && <span className={styles.label}>{props.label}</span>}
+    <div class={styles.hr} role="separator">
+      {props.label && <span class={styles.label}>{props.label}</span>}
     </div>
-  )
+  );
 };
 
 export default Divider;
