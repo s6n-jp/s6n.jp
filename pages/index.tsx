@@ -1,4 +1,4 @@
-import type { GetStaticProps } from "next";
+import type { GetStaticProps } from 'next';
 import type { FC } from 'react';
 import { Client, type User } from 'wantedly-profile';
 

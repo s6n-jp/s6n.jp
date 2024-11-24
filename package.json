@@ -17,16 +17,12 @@
   "scripts": {
     "dev": "next dev",
     "start": "next start",
+    "build": "next build",
     "check": "biome check",
-    "fix": "biome check --fix",
-    "build": "run-s build:font build:next",
-    "build:next": "next build",
-    "build:font": "run-p build:font:eot build:font:woff build:font:woff2",
-    "build:font:eot": "ttf2eot ./public/fonts/Gilroy-ExtraBold.ttf ./public/fonts/Gilroy-ExtraBold.eot",
-    "build:font:woff": "ttf2woff ./public/fonts/Gilroy-ExtraBold.ttf ./public/fonts/Gilroy-ExtraBold.woff",
-    "build:font:woff2": "ttf2woff2 <./public/fonts/Gilroy-ExtraBold.ttf >./public/fonts/Gilroy-ExtraBold.woff2"
+    "fix": "biome check --fix"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "modern-css-reset": "^1.4.0",
     "next": "^15.0.3",
     "react": "^18.3.1",
@@ -40,9 +36,6 @@
     "@types/react": "^18.3.12",
     "graphql": "^16.9.0",
     "npm-run-all": "^4.1.5",
-    "ttf2eot": "^3.1.0",
-    "ttf2woff": "^3.0.0",
-    "ttf2woff2": "^6.0.1",
     "typescript": "^5.6.3"
   },
   "engines": {

@@ -1,9 +1,15 @@
+import clsx from "clsx";
+import {Noto_Sans_JP} from "next/font/google";
 import type React from 'react';
 
 import Menus, { type MenuItem } from '../molecules/menus';
 import Sidebar from '../organisms/sidebar';
 
 import styles from './main.module.scss';
+
+const notoSans = Noto_Sans_JP({
+  preload: false,
+})
 
 const Items: MenuItem[] = [
   {
@@ -25,7 +31,7 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div className={styles.wrapper}>
+    <div className={clsx(notoSans.className, styles.wrapper)}>
       <Sidebar className={styles.side} />
       <div className={styles.contents}>
         <Menus items={Items} />
