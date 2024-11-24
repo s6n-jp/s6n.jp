@@ -1,6 +1,6 @@
 import type React from 'react';
 
-import Tagline from '../atoms/tagline';
+import Tagline from './Tagline';
 
 type Props = {
   texts: string[];

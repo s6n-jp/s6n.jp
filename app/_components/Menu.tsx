@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { Outfit } from 'next/font/google';
 import type React from 'react';
 
-import styles from './menu.module.scss';
+import styles from './Menu.module.css';
 
 const outfit = Outfit({
   subsets: ['latin'],

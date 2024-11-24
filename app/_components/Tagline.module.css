@@ -1,0 +1,14 @@
+.tagline {
+  display: block;
+  color: var(--color-text-primary);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.isColored {
+  color: #fe3a7c;
+  background: linear-gradient(45deg, #fe3a7c, #ffa900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

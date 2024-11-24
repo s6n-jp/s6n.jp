@@ -1,8 +1,8 @@
 import type React from 'react';
 
-import Menu from '../atoms/menu';
+import Menu from './Menu';
 
-import styles from './menus.module.scss';
+import styles from './Menus.module.css';
 
 export type MenuItem = {
   text: string;

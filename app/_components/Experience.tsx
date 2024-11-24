@@ -1,7 +1,7 @@
 import type { FC } from 'react';
 import type { Duration, EmploymentType, YearMonth } from 'wantedly-profile';
 
-import styles from './experience.module.scss';
+import styles from './Experience.module.css';
 
 type Props = {
   name: string;

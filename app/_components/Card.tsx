@@ -1,7 +1,7 @@
 import type { FC } from 'react';
-import Avatar from '../atoms/avatar';
+import Avatar from './Avatar';
 
-import styles from './card.module.scss';
+import styles from './Card.module.css';
 
 type Props = {
   name: string;

@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 
-import styles from './divider.module.scss';
+import styles from './Divider.module.css';
 
 type Props = {
   label?: string;

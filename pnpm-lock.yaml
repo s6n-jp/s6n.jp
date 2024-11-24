@@ -26,6 +26,9 @@ importers:
       sass:
         specifier: ^1.81.0
         version: 1.81.0
+      styled-jsx:
+        specifier: ^5.1.6
+        version: 5.1.6(react@18.3.1)
       wantedly-profile:
         specifier: ^0.1.1
         version: 0.1.1(encoding@0.1.13)(graphql@16.9.0)

@@ -7,10 +7,10 @@ import type {
   WorkExperience,
 } from 'wantedly-profile';
 
-import Divider from '../atoms/divider';
-import Experience from '../atoms/experience';
+import Divider from './Divider';
+import Experience from './Experience';
 
-import styles from './history.module.scss';
+import styles from './History.module.css';
 
 const Section: FC<{ section: LifeStoryChapterSection<ExperienceType> }> = ({ section }) => {
   if (section.experienceType === 'EDUCATION') {
