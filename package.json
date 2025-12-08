@@ -32,7 +32,7 @@
     "wantedly-profile": "^0.1.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
+    "@biomejs/biome": "^2.3.8",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.7",
     "graphql": "^16.12.0",
