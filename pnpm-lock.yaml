@@ -37,8 +37,8 @@ importers:
         specifier: ^1.9.4
         version: 1.9.4
       '@types/node':
-        specifier: ^24.10.1
-        version: 24.10.1
+        specifier: ^25.0.10
+        version: 25.0.10
       '@types/react':
         specifier: ^19.2.9
         version: 19.2.9
@@ -383,8 +383,8 @@ packages:
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
-  '@types/node@24.10.1':
-    resolution: {integrity: sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==}
+  '@types/node@25.0.10':
+    resolution: {integrity: sha512-zWW5KPngR/yvakJgGOmZ5vTBemDoSqF3AcV/LrO5u5wTWyEAVVh+IT39G4gtyAkh3CtTZs8aX/yRM82OfzHJRg==}
 
   '@types/react@19.2.9':
     resolution: {integrity: sha512-Lpo8kgb/igvMIPeNV2rsYKTgaORYdO1XGVZ4Qz3akwOj0ySGYMPlQWa8BaLn0G63D1aSaAQ5ldR06wCpChQCjA==}
@@ -1250,7 +1250,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@types/node@24.10.1':
+  '@types/node@25.0.10':
     dependencies:
       undici-types: 7.16.0
 
