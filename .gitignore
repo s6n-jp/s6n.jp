@@ -1,6 +1,7 @@
 /node_modules/
 /.next/
 /out/
+*.tsbuildinfo
 
 # OpenNext
 .open-next
