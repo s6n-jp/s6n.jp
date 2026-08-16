@@ -15,9 +15,9 @@
 
 .label {
   color: #ccc;
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: bolder;
   text-transform: uppercase;
-  margin-right: .5em;
+  margin-right: 0.5em;
   flex: 0 0 content;
 }

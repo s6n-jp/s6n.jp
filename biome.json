@@ -5,27 +5,25 @@
     "useIgnoreFile": true,
     "clientKind": "git"
   },
+  "files": {
+    "includes": ["**", "!**/*.svg"]
+  },
   "formatter": {
     "enabled": true,
-    "useEditorconfig": true
+    "useEditorconfig": true,
+    "lineWidth": 120
   },
   "linter": {
     "enabled": true,
     "rules": {
-      "all": true,
-      "correctness": {
-        "useImportExtensions": "off"
-      },
-      "suspicious": {
-        "noReactSpecificProps": "off"
-      },
-      "style": {
-        "noDefaultExport": "off"
+      "preset": "recommended",
+      "performance": {
+        "noImgElement": "off"
       }
     }
   },
-  "organizeImports": {
-    "enabled": true
+  "assist": {
+    "enabled": false
   },
   "javascript": {
     "formatter": {

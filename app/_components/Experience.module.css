@@ -1,5 +1,5 @@
 .title {
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 
   & > span {
     display: block;
@@ -7,7 +7,7 @@
 
   .duration {
     color: #888;
-    font-size: .8em;
+    font-size: 0.8em;
     text-transform: uppercase;
   }
 
@@ -17,8 +17,8 @@
 
   .at,
   .as {
-    margin: 0 .5em;
-    font-size: .8em;
+    margin: 0 0.5em;
+    font-size: 0.8em;
 
     &:first-child {
       margin-left: 0;
@@ -27,6 +27,6 @@
 
   .name,
   .type {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 }
