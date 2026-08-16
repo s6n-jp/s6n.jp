@@ -24,6 +24,9 @@
 		// see https://opennext.js.org/cloudflare/howtos/image
 		"binding": "IMAGES"
 	},
+  "build": {
+    "command": "pnpm exec opennextjs-cloudflare build"
+  },
   "observability": {
     "enabled": true,
     "head_sampling_rate": 1,
