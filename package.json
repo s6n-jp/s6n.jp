@@ -19,9 +19,14 @@
     "start": "next start",
     "build": "next build",
     "check": "biome check",
-    "fix": "biome check --fix"
+    "fix": "biome check --fix",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.20.2",
     "clsx": "^2.1.1",
     "modern-css-reset": "^1.4.0",
     "next": "^16.2.12",
@@ -37,9 +42,10 @@
     "@types/react": "^19.2.17",
     "graphql": "^16.14.2",
     "npm-run-all": "^4.1.5",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "wrangler": "^4.123.0"
   },
   "engines": {
-    "node": "^20"
+    "node": "^24"
   }
 }
