@@ -26,7 +26,7 @@
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
-    "@opennextjs/cloudflare": "^1.20.17",
+    "@opennextjs/cloudflare": "^1.20.18",
     "clsx": "^2.1.1",
     "modern-css-reset": "^1.4.0",
     "next": "^16.4.6",
@@ -37,13 +37,13 @@
     "wantedly-profile": "^0.2.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.6.7",
+    "@biomejs/biome": "^2.6.8",
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "graphql": "^16.15.0",
     "npm-run-all": "^4.1.5",
     "typescript": "^7.0.2",
-    "wrangler": "^4.162.0"
+    "wrangler": "^4.165.0"
   },
   "engines": {
     "node": "^24"
